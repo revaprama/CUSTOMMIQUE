@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CUSTOMMIQUE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f9f9f9;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 16px 40px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .navbar .logo {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+
+      .navbar .search {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 10px;
+      }
+
+      .navbar .search input {
+        border: none;
+        outline: none;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 10px 0;
+        gap: 30px;
+        font-size: 14px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+      }
+
+      .menu a:hover {
+        color: #007acc;
+      }
+
+      .hero-image {
+        display: block;
+        width: 95%;
+        max-width: 1000px;
+        margin: 30px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .product-card {
+        background-color: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.2s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        object-fit: cover;
+      }
+
+      .product-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .product-price {
+        color: #444;
+        font-size: 14px;
+      }
+
+      .product-rating {
+        margin-top: 6px;
+        color: #f39c12;
+        font-size: 14px;
+      }
+
+      .shade-options button {
+        margin: 5px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .shade-options button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .shade-options button.active {
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">CUSTOMMIQUE</div>
+      <div class="search"></div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+      <a href="landing page.html">Beranda</a>
+      <a href="about.html">About</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+
+    <img
+      src="images/i.png"
+      alt="Pearl Phone Strap"
+      class="hero-image"
+    />
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img
+          src="images/WhatsApp Image 2025-06-15 at 17.09.58_70078d02.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Akrilik Mutiara</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/banyak.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Tali Lanyard HP Handmade</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/blue..jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Blue Flower</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/purple.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Purple Flower</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/mixx.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Mix Pastel</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/mix.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Mix Soft</div>
+        <div class="product-price">25,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/download (1).jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Pink Flower</div>
+        <div class="product-price">26,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/kuning.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Yellow Mix</div>
+        <div class="product-price">25,500</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/Pastel Rainbow Phone Charm Strap.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Rainbow</div>
+        <div class="product-price">29,000</div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="images/strap.jpg"
+          alt="Product Image"
+        />
+        <div class="product-title">Strap HP Classic</div>
+        <div class="product-price">24,000</div>
+      </div>
+    </div>
+
+    <script>
+      window.onclick = function (event) {
+        const modal = document.getElementById('quickModal');
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.shade-options button');
+        const variantImage = document.getElementById('variantImage');
+        const variantName = document.getElementById('variantName');
+
+        buttons.forEach((button) => {
+          button.addEventListener('click', function () {
+            buttons.forEach((btn) => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const img = this.getAttribute('data-img');
+            const name = this.getAttribute('data-name');
+            if (img) variantImage.src = img;
+            if (name) variantName.textContent = name;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
